@@ -5,15 +5,15 @@ defmodule Geom do
     area(shape, x, y)
   end
 
-  defp area(:rectangle, x, y) when x >=0 and y >= 0 do
+  defp area(:rectangle, x, y) when x >= 0 and y >= 0 do
     x * y
   end
 
-  defp area(:triangle, x, y) when x >=0 and y >= 0 do
+  defp area(:triangle, x, y) when x >= 0 and y >= 0 do
     x * y / 2.0
   end
 
-  defp area(:ellipse, x, y) when x >=0 and y >= 0 do
+  defp area(:ellipse, x, y) when x >= 0 and y >= 0 do
     :math.pi * x * y
   end
 
